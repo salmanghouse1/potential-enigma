@@ -1,0 +1,23 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "A node js application that generates readme files based on your input",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salmanghouse1/potential-enigma.git"
+  },
+  "keywords": [
+    "readme",
+    "generator"
+  ],
+  "author": "Salman Ghouse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salmanghouse1/potential-enigma/issues"
+  },
+  "homepage": "https://github.com/salmanghouse1/potential-enigma#readme"
+}
