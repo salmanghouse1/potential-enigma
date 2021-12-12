@@ -3,14 +3,9 @@
 
 const inquirer = require("inquirer");
 // Title Question
-let renderTitle = (question) => {
-    inquirer.prompt([{
-        type: 'input',
-        name: 'title',
-        message: question
-    }]).then(answers => {
-        console.log(answers.title);
-    })
+let renderReadme = () => {
+
+
 }
 
 let renderDescription = (question) => {
@@ -40,11 +35,23 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-    return `# ${data.title}
-
-    `;
+    console.log("GENERATE MARKDOWN" + data.title)
+    return `# ${data.title}</br>
+    ------------------------
+    ## Description</br>
+    ${data.description}</br>
+    -------------------------
+    ## Installation Guide
+    ${data.installed}
+    ## Usage
+    ${data.usage}
+    ## Credits
+    ${data.userInfo}
+    `
 
 
 }
 
-module.exports = { generateMarkdown, renderTitle, renderDescription };
+module.exports = {
+    generateMarkdown
+};
