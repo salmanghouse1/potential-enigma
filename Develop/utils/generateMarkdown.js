@@ -79,66 +79,66 @@ function generateMarkdown(data) {
 
 ${ renderLicenseSection(data.license) }
 
-## Table Of Contents
-[Description](##description)
+# Table Of Contents
+[Description](#description)
 
-[Installataion Guide](##installation-guide)
+[Installataion Guide](#installation-guide)
 
-[Usage](##usage)
+[Usage](#usage)
 
-[Credits](##credits)
+[Credits](#credits)
 
-[Instructions](##instructions)
+[Instructions](#instructions)
 
-[Contributions](##contributions)
+[Contributions](#contributions)
 
-[User Info](##user-info)
+[User Info](#user-info)
 
-[License](##license)
-
-
-[Github Username](##github-username)
+[License](#license)
 
 
-[Questions](##questions)
+[Github Username](#github-username)
 
-## Description
+
+[Questions](#questions)
+
+# Description
 ${ data.description }
 
-## Installation Guide
+# Installation Guide
 ${ data.installed }
 
-## Usage
+# Usage
 ${ data.usage }
 
-## Credits
+# Credits
 ${ data.userInfo }
 
-## Instructions
+# Instructions
 ${ data.testInstructions }
 
-## Contributions
+# Contributions
 ${ data.contribution }
 
-## User Info
+# User Info
 ${ data.userInfo }
 
-## Info URL
+# Info URL
     [Info URL](${ data.infoUrl })
 
-## License
+# License
 
-## This Product has the ${ data.license }
+# This Product has the ${ data.license }
 License.
 
 
 ${ renderLicenseSection(data.license) }
 
-## Github Username
+# Github Username
 
 [${data.githubUsername}](https://github.com/${data.githubUsername})
 
-## Questions
+# Questions
 
 To reach me contact my email at ${data.email}
 

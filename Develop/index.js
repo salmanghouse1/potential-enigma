@@ -227,15 +227,10 @@ async function questions() {
 async function init() {
     questions().then((answers) => {
 
-        console.log(answers);
         writeToFile(fileName, answers);
-
+        console.log("Readme generated...Check README.md")
 
     });
-
-
-
-
 
 }
 
@@ -243,112 +238,3 @@ async function init() {
 
 
 init();
-
-//    writeToFile(fileName, initAnswers)
-// return initAnswers
-
-// }).then(collabData => {
-//     console.log('data1' + collabData)
-
-
-//     // writeToFile(fileName, collabData)
-
-//     return handlecollabQuesitons(promptCollabQuestion)
-//         // use collab data
-// }).then((promptCollabData) => {
-
-//     // writeToFile(fileName, promptCollabData)
-//     console.log('data2' + promptCollabData)
-//     return promptEnterCollabName(promptCollabData);
-
-// }).then((userData) => {
-//     console.log('userData in prompt Collab', userData)
-//     writeToFile(fileName, userData)
-// })
-
-// async function promptEnterCollabName(initanswers) {
-
-//     let answers = {};
-//     for (let i = 0; i < parseInt(initanswers.numberOfCollaborators); i++) {
-//         answers = await inquirer.prompt([{
-//             type: "input",
-//             name: `collabUser${[i]}`,
-//             message: `Enter User ${i + 1} Name`
-//         }]);
-//         collaboratorAnswers.push(answers);
-//     }
-//     return collaboratorAnswers;
-// }
-
-// // function promptAndAddIfNeccessary() {
-// //     inquirer.prompt([{
-// //         type: 'confirm',
-// //         name: 'collabStatus',
-// //         message: 'Would you like to enter some collabs?',
-// //         when: () => {
-//             if (collabStatust) {
-//                 inquirer.prompt([{}])
-//             } else {
-//                 return 'No Collaborators';
-//             }
-//         }
-//     }, ])
-// }
-
-
-
-
-// async function addCollab(colabstatusVar) {
-//     let collaboratorsArray = [];
-//     let answers = {};
-//     console.log(colabstatusVar)
-//     if (colabstatusVar === 'Yes') {
-
-//         answers = await inquirer.prompt([{
-
-//             // prompting user for description
-//             type: 'input',
-//             name: `
-// Collab `,
-//             message: 'Enter Collab Name',
-//             validate: Collab => {
-//                 if (Collab) {
-//                     console.log("value accepted")
-
-//                     return true
-//                 } else {
-//                     console.log("Enter some value")
-
-//                     return false;
-//                 }
-//             }
-//         }]);
-//     }
-//     collaboratorsArray.push(answers);
-
-
-//     return answers;
-// }
-
-// add a collab
-
-
-// function promptCollab() {
-//     // prompting user for installlation instructions
-//     const promptAnswerCollab = inquirer.prompt([{
-//         type: 'list',
-//         name: 'collabStatus',
-//         choices: ['Yes', 'No'],
-//         message: 'Enter collabs?'
-//     }])
-
-// }
-
-// init().then((initAnswers) => {
-//     // add a collab
-//     console.log('line 103' +
-//         initAnswers.collabStatus)
-//     promptAndAddIfNeccessary()
-// }).then((answers) => {})abStatus)
-//     promptAndAddIfNeccessary()
-// }).then((answers) => {})
