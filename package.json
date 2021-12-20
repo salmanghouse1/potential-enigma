@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/salmanghouse1/potential-enigma/issues"
   },
-  "homepage": "https://github.com/salmanghouse1/potential-enigma#readme"
+  "homepage": "https://github.com/salmanghouse1/potential-enigma#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
 }
